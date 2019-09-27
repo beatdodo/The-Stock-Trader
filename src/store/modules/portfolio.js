@@ -3,7 +3,7 @@ const state = {
     stocks: []
 };
 
-const mutaions = {
+const mutations = {
     'BUY_STOCK'(state, {stockId, quantity, stockPrice}) {
         const record = state.stocks.find(element => element.id === stockId);
         if (record) {
@@ -52,7 +52,7 @@ const getters = {
 
 export default {
     state,
-    mutaions,
+    mutations,
     actions,
     getters
 }

@@ -24,7 +24,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a @click="saveData" style="cursor: pointer">Save Data</a></li>
-                            <li><a href="#">Load Data</a></li>
+                            <li><a @click="loadData" style="cursor: pointer">Load Data</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -61,6 +61,9 @@
                     stocks: this.$store.getters.stocks
                 };
                 this.$http.put('data.json', data);
+            },
+            loadData() {
+
             }
         }
     }
